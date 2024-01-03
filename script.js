@@ -1,6 +1,6 @@
 // usersChoice function
 const usersChoice = ()=>{
-    let choice = prompt("Enter Your Choice : ");
+    let choice = prompt("Enter Your Choice s, w or g : ");
     choice = choice.toLocaleLowerCase();
     console.log(choice);
     return choice;
@@ -21,9 +21,7 @@ const computersChoice = ()=>{
 const resultOf = (user,computer)=>{
     // case 1 : tie
     if(user == computer) {
-        alert(`It's a Tie !
-        You : ${user}
-        Computer : ${computer}`);
+        alert(`It's a Tie !\nYou : ${user}\nComputer : ${computer}`);
     }
     // case 2 : user wins
     else if(
@@ -31,15 +29,11 @@ const resultOf = (user,computer)=>{
         (user == "g" && computer == "s") || 
         (user == "w" && computer == "g")
     ) {
-        alert(`You Won!
-        You : ${user}
-        Computer : ${computer}`);
+        alert(`You Won!\nYou : ${user}\nComputer : ${computer}`);
     }
     // case 3 : user looses
     else {
-        alert(`You Lost!
-        You : ${user}
-        Computer : ${computer}`);
+        alert(`You Lost!\nYou : ${user}\nComputer : ${computer}`);
     }
 }
 
